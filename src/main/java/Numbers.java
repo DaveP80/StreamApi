@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
 public class Numbers {
     static Scanner scan = new Scanner(System.in);
     private int a;
