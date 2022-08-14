@@ -76,7 +76,7 @@ public class Numbers {
                 if (minVal.isPresent()) System.out.println("Minimum value: " + minVal.get());
                 Thread.sleep(1000);
 
-                //must obtain a new stream because pevious call to min() is a terminal operation
+                //must obtain a new stream because previous call to min() is a terminal operation
                 //that consumed the stream.
                 myStream = ArrLis.stream();
                 Optional<Integer> maxVal = myStream.max(Integer::compare);
@@ -122,7 +122,7 @@ public class Numbers {
                 Thread.sleep(10);System.out.print(">");
                 int i;
                 for (i=0; i<20; i++) {
-                    System.out.print(">");}
+                   Thread.sleep(50); System.out.print(">");}
 
                 DecimalFormat df = new DecimalFormat("#.##");
 
