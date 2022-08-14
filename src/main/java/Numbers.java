@@ -3,11 +3,8 @@ import java.util.ArrayList;
 import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-
 public class Numbers {
-
     static Scanner scan = new Scanner(System.in);
-
     private int a;
     private int b;
     private int c;
@@ -121,17 +118,11 @@ public class Numbers {
                 System.out.println("\n");
 
                 System.out.println("Computing 3 random double values");
-                Thread.sleep(10); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                Thread.sleep(50); System.out.print(">"); Thread.sleep(50); System.out.print(">");
-                System.out.println();
+
+                Thread.sleep(10);System.out.print(">");
+                int i;
+                for (i=0; i<20; i++) {
+                    System.out.print(">");}
 
                 DecimalFormat df = new DecimalFormat("#.##");
 
@@ -145,7 +136,7 @@ public class Numbers {
                 myList.add(bd);
                 myList.add(cd);
 
-                System.out.println("myList: "+myList);
+                System.out.println("\n"+"myList: "+myList);
                 //two ways to obtain the double product of the elements
                 Optional<Double> productObj = myList.stream().reduce((x,y) -> x*y);
                 if(productObj.isPresent()) System.out.println("Product as Optional(rounded): "
@@ -204,7 +195,6 @@ public class Numbers {
                 while (scan.nextInt() == 1) {
                     System.exit(0);
                 }
-
             } catch (InputMismatchException e) {
                 System.out.println("enter integers");
                 String restart = scan.next();
