@@ -198,7 +198,7 @@ public class Numbers {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("enter integers");
-                String restart = scan.next();
+                scan.next();
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
